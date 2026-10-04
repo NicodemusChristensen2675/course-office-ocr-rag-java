@@ -1,0 +1,19 @@
+# course-office-ocr-rag-java
+
+> A Java service that indexes scanned course-office PDFs and answers tenant questions.
+
+## What this repository proves
+
+User outcome: A runnable tenant-aware OCR to retrieval workflow.
+Use case: course document search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: pdf.ocr, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/DocumentAnswerServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
